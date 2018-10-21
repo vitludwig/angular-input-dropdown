@@ -63,7 +63,7 @@ angular.module('inputDropdown', []).directive('inputDropdown', [function() {
       scope.dropdownItems = scope.defaultDropdownItems || [];
 
       scope.$watch('dropdownItems', function(newValue, oldValue) {
-        if (!angular.equals(newValue, oldValue)) {
+        //if (!angular.equals(newValue, oldValue)) {
           // If new dropdownItems were retrieved, reset active item
           if (scope.allowCustomInput) {
             scope.setInputActive();
@@ -71,7 +71,7 @@ angular.module('inputDropdown', []).directive('inputDropdown', [function() {
           else {
             scope.setActive(0);
           }
-        }
+        //}
       });
 
       scope.$watch('selectedItem', function(newValue, oldValue) {
