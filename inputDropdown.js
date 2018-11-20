@@ -19,8 +19,8 @@ angular.module('inputDropdown', []).directive('inputDropdown', [function() {
         'ng-mousedown="dropdownPressed()"' +
         'ng-class="{\'active\': activeItemIndex === $index}"' +
         '>' +
-        '<span ng-if="item.readableName">{{item.readableName}}</span>' +
-        '<span ng-if="!item.readableName">{{item}}</span>' +
+        '<span ng-if="item.customName">{{item.customName}}</span>' +
+        '<span ng-if="!item.customName">{{item}}</span>' +
         '</li>' +
         '</ul>' +
         '</div>';
